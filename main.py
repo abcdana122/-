@@ -42,7 +42,7 @@ for word in search_words:
     # 이미지 추출
     print(f'[!] "{word}" 이미지 정보를 받고있습니다...')
     links = []
-    images = driver.find_elements(By.CSS_SELECTOR, 'img.rg_i.Q4LuWd')
+    images = driver.find_elements(By.CSS_SELECTOR, '.YQ4gaf')
     for image in images:
         if image.get_attribute('src') != None:
             links.append(image.get_attribute('src'))
